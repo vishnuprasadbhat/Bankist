@@ -60,6 +60,7 @@ document.querySelector('.nav__links').addEventListener('click', function (e) {
     e.preventDefault();
     const id = e.target.getAttribute('href');
     // console.log(id);
+    if (id === '#') return;
     if (id === 'html/bankistApp.html') {
       location.href = 'html/bankistApp.html';
     } else document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
