@@ -60,12 +60,17 @@ document.querySelector('.nav__links').addEventListener('click', function (e) {
     e.preventDefault();
     const id = e.target.getAttribute('href');
     // console.log(id);
-    if (id === 'bankistApp.html') {
-      location.href = 'bankistApp.html';
-    }
-    document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+    if (id === 'html/bankistApp.html') {
+      location.href = 'html/bankistApp.html';
+    } else document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
   }
 });
+
+// const loginBtnBankist = document.querySelector('.bankist');
+// loginBtnBankist.addEventListener('click', function (e) {
+//   e.preventDefault();
+//   location.href = 'html/bankistApp.html';
+// });
 
 //Tabbed components
 const tabs = document.querySelectorAll('.operations__tab');
